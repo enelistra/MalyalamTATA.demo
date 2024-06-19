@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Free Test Drive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: calc(100vh - 60px); /* Adjust for navbar and footer */
+            background: url('background-image.jpg') no-repeat center center/cover;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .left-section, .right-section {
+            width: 50%;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .right-section {
+            background: white;
+            color: black;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color: #f0c14b;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-group button:hover {
+            background-color: #e2ae3d;
+        }
+        .info-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .info-box .icon {
+            font-size: 40px;
+            margin-right: 15px;
+        }
+        .info-box div {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .left-section, .right-section {
+                width: 100%;
+                padding: 20px;
+            }
+            .info-box {
+                justify-content: center;
+            }
+            .info-box .icon {
+                margin: 0 10px 0 0;
+            }
+        }
+        @media (max-width: 480px) {
+            .left-section h1 {
+                font-size: 24px;
+            }
+            .left-section p, .info-box h3, .info-box p {
+                font-size: 14px;
+            }
+            .form-container h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./index.html#service">Services</a>
+            <a href="./index.html#new-cars">New Cars</a>
+            <a href="./index.html#featured-cars">Featured Cars</a>
+            <a href="./index.html#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-section">
+            <h1>Book Your Free Test Drive</h1>
+            <p>Use the form to book your Test Drive. A Test Drive Executive will call you within 24 hours!</p>
+            <div class="info-box">
+                <i class="fas fa-tools icon"></i>
+                <div>
+                    <h3>Expert Services</h3>
+                    <p>Your vehicle will be serviced with expert care.</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-cogs icon"></i>
+                <div>
+                    <h3>Genuine Accessories</h3>
+                    <p>Genuine TATA accessories for your vehicle.</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-phone-alt icon"></i>
+                <div>
+                    <h3>On Road Assistance</h3>
+                    <p>Call us to get on road assistance.</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-shield-alt icon"></i>
+                <div>
+                    <h3>Trusted TATA Dealer</h3>
+                    <p>TATA dealer since 2011.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="form-container">
+                <h2>Book Your Free Test Drive!</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" id="contact" name="contact">
+                </div>
+                <div class="form-group">
+                    <label for="model">Select the Test Drive Model</label>
+                    <select id="model" name="model">
+                        <option value="model1">Model 1</option>
+                        <option value="model2">Model 2</option>
+                        <option value="model3">Model 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="district">Select Your District</label>
+                    <select id="district" name="district">
+                        <option value="district1">District 1</option>
+                        <option value="district2">District 2</option>
+                        <option value="district3">District 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">YES, I WANT A FREE TEST DRIVE!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Malayalam Vehicles. All rights reserved.</p>
+    </div>
+</body>
+</html>
